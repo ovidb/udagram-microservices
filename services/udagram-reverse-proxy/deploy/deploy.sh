@@ -12,3 +12,4 @@ export URL_BASE64=`echo -n "$URL" | base64`
 
 cat env-variables.yaml | envsubst | kubectl apply -f -
 kubectl apply -f ./deployment.yaml
+kubectl apply -f ./service.yaml
