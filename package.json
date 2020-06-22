@@ -7,7 +7,8 @@
     "deploy:api:feed": "cd services/udagram-api-feed/deploy && ./deploy.sh",
     "deploy:api:users": "cd services/udagram-api-users/deploy && ./deploy.sh",
     "deploy:frontend": "cd services/udagram-frontend/deploy && ./deploy.sh",
-    "deploy:loadbalancer": "cd services/udagram-reverse-proxy/deplo && ./deploy.sh"
+    "deploy:loadbalancer": "cd services/udagram-reverse-proxy/deploy && ./deploy.sh",
+    "deploy:all": "npm run deploy:api:feed && npm run deploy:api:users && npm run deploy:frontend && npm run deploy:loadbalancer"
   },
   "author": "ovidb",
   "license": "ISC"
