@@ -4,7 +4,10 @@
   "description": "Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy:api:feed": "udagram-api-feed/deploy/deploy.sh",
+    "deploy:api:users": "udagram-api-users/deploy/deploy.sh",
+    "deploy:frontend": "udagram-frontend/deploy/deploy.sh",
+    "deploy:loadbalancer": "udagram-reverse-proxy/deploy/deploy.sh"
   },
   "author": "ovidb",
   "license": "ISC"

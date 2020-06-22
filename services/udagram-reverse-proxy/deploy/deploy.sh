@@ -11,4 +11,5 @@ export JWT_SECRET_BASE64=`echo -n "$JWT_SECRET" | base64`
 export URL_BASE64=`echo -n "$URL" | base64`
 export AWS_CREDENTIALS_FILE_BASE64=`cat $HOME/.aws/credentials | base64 -w 0`
 
-cat common-env-variables.yaml | envsubst | kubectl apply -f -
+cat env-variables.yaml | envsubst | kubectl apply -f -
+kubectl apply -f ./deployment.yaml
